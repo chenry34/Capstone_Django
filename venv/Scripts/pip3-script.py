@@ -1,4 +1,4 @@
-#!"D:\Documents\ECE 4600 (Capstone)\Backend\venv\Scripts\python.exe"
+#!"D:\Documents\ECE 4600 (Capstone)\Capstone_Django\venv\Scripts\python.exe"
 # EASY-INSTALL-ENTRY-SCRIPT: 'pip==19.0.3','console_scripts','pip3'
 __requires__ = 'pip==19.0.3'
 import re

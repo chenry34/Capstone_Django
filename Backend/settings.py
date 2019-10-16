@@ -79,7 +79,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'capstone',
-        'USER': 'root',
+        'USER': 'SmartHome2',
         'PASSWORD': 'capstone',
         'HOST': '127.0.0.1',
         'PORT': 3306
@@ -111,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'CDT'
+TIME_ZONE = 'UTC'
 
 USE_I18N = True
 

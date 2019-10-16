@@ -1,4 +1,4 @@
-#!D:\Documents\ECE 4600 (Capstone)\Backend\venv\Scripts\python.exe
+#!D:\Documents\ECE 4600 (Capstone)\Capstone_Django\venv\Scripts\python.exe
 from django.core import management
 
 if __name__ == "__main__":
