@@ -15,5 +15,6 @@ urlpatterns = [
     path('setDoor', views.set_door_status, name="set_door_status"),
     path('getCO', views.get_co_status, name="get_co_status"),
     path('setCO', views.set_co_status, name="set_co_status"),
-    path('createUser', views.create_user, name="create_user")
+    path('createUser', views.create_user, name="create_user"),
+    path('', views.index, name="index")
 ]
