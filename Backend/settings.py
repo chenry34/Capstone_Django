@@ -25,7 +25,7 @@ SECRET_KEY = '_zcmv%#h2swj2bztfbd@x-8m)tk64@!rdo%old3(3mlj83d4uw'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.0.102', '192.168.2.78']
 
 
 # Application definition
@@ -54,11 +54,11 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
-CORS_ORIGIN_WHITELIST = [
-    'http://localhost:8081'   # Here was the problem indeed and it has to be http://localhost:3000, not http://localhost:3000/
-]
+# CORS_ORIGIN_WHITELIST = [
+#     'http://localhost:8081'   # Here was the problem indeed and it has to be http://localhost:3000, not http://localhost:3000/
+# ]
 
 ROOT_URLCONF = 'Backend.urls'
 

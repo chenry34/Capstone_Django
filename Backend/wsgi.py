@@ -8,6 +8,11 @@ https://docs.djangoproject.com/en/2.2/howto/deployment/wsgi/
 """
 
 import os
+import sys
+
+sys.path.append('/var/www/vhosts/Capstone_Django')
+
+sys.path.append('/var/www/vhosts/Capstone_Django/venv/lib/site-packages')
 
 from django.core.wsgi import get_wsgi_application
 
