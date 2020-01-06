@@ -37,7 +37,6 @@ class Door(models.Model):
 class Motion(models.Model):
     id = models.AutoField(unique=True, primary_key=True)  # Primary Key
     value = models.FloatField()
-    sensor_id = models.IntegerField()
     time_stamp = models.DateField()
 
 
