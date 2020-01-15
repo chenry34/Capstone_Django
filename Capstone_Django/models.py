@@ -45,3 +45,8 @@ class CarbonMonoxide(models.Model):
     value = models.FloatField()
     time_stamp = models.DateField()
 
+
+class Light(models.Model):
+    id = models.AutoField(unique=True, primary_key=True)  # Primary Key
+    value = models.FloatField()
+    time_stamp = models.DateField()

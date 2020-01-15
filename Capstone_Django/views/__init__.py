@@ -6,3 +6,4 @@ from .door import *
 from .motion_sensor import *
 from .window import *
 from .index import *
+from .light import *

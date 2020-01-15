@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from ..models import Motion
+from ..models import Light
 from django.http import JsonResponse
 import datetime
 from rest_framework.response import Response
@@ -9,14 +9,13 @@ from rest_framework.permissions import IsAuthenticated
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
-def get_motion_status(request):
-    motion = Motion.objects.last()
-    return Response(motion.value)
+def get_light_status(request):
+    light = Light.objects.last()
+    return Response(light.value)
 
 
-def set_motion_status(request):
-    motion = Motion(value=request.GET.get('motion'), time_stamp=datetime.datetime.now())
-    print(motion)
-    motion.save()
+def set_light_status(request):
+    light = Light(value=request.GET.get('motion'), time_stamp=datetime.datetime.now())
+    light.save()
     return HttpResponse("success")
 
