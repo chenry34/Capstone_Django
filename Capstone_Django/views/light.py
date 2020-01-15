@@ -15,7 +15,7 @@ def get_light_status(request):
 
 
 def set_light_status(request):
-    light = Light(value=request.GET.get('motion'), time_stamp=datetime.datetime.now())
+    light = Light(value=request.GET.get('light'), time_stamp=datetime.datetime.now())
     light.save()
     return HttpResponse("success")
 
