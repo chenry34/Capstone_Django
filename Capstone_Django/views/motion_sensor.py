@@ -16,7 +16,6 @@ def get_motion_status(request):
 
 def set_motion_status(request):
     motion = Motion(value=request.GET.get('motion'), time_stamp=datetime.datetime.now())
-    print(motion)
     motion.save()
     return HttpResponse("success")
 
