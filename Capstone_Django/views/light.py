@@ -15,7 +15,13 @@ def get_light_status(request):
 
 
 def set_light_status(request):
-    light = Light(value=request.GET.get('light'), time_stamp=datetime.datetime.now())
+    value = request.GET.get('light')
+    if value == "true":
+        value = 1
+    else:
+        value = 0
+
+    light = Light(value=value, time_stamp=datetime.datetime.now())
     light.save()
     return HttpResponse("success")
 
