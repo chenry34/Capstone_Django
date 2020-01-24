@@ -14,6 +14,7 @@ urlpatterns = [
     path('getDoor', views.get_door_status, name="get_door_status"),
     path('setDoor', views.set_door_status, name="set_door_status"),
     path('getLight', views.get_light_status, name="get_light_status"),
+    path('getLightForArduino', views.get_light_for_arduino, name="get_light_for_arduino"),
     path('setLight', views.set_light_status, name="set_light_status"),
     path('getCO', views.get_co_status, name="get_co_status"),
     path('setCO', views.set_co_status, name="set_co_status"),

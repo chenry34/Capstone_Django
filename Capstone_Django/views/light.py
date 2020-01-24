@@ -8,10 +8,17 @@ from rest_framework.permissions import IsAuthenticated
 
 
 @api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def get_light_status(request):
     date = datetime.today() - timedelta(days=1)
     light = Light.objects.filter(time_stamp__gte=date)
     return Response(light.values())
+
+
+@api_view(['GET'])
+def get_light_for_arduino(request):
+    light = Light.objects.last()
+    return Response(light.value)
 
 
 def set_light_status(request):
