@@ -8,7 +8,6 @@ from rest_framework.permissions import IsAuthenticated
 
 
 @api_view(['GET'])
-@permission_classes([IsAuthenticated])
 def get_light_status(request):
     date = datetime.today() - timedelta(days=1)
     light = Light.objects.filter(time_stamp__gte=date)
